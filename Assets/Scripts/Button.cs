@@ -11,7 +11,9 @@ public class Button : MonoBehaviour
 
     public float speed = 5;
 
-    
+    private Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
+
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -22,15 +24,25 @@ public class Button : MonoBehaviour
     void Update()
     {
 
+        Move();
+        StopButton();
 
-        //consistient speed in x direction
-        Vector3 movement = new Vector3();
+    }
+
+    public void Move()
+    {
         movement.x = speed;
-        movement.y = 0;
-
         rb2d.velocity = new Vector2(movement.x, movement.y);
+    }
 
-
+    public void StopButton()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            movement.x = 0.0f;
+            rb2d.velocity = new Vector2(movement.x, movement.y);
+        }
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
