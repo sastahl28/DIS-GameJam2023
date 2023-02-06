@@ -1,49 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
 
-    SpriteRenderer sr;
+    SpriteRenderer mySpriteRenderer;
     Rigidbody2D rb2d;
 
     public float speed = 5;
 
-    private Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        Move();
 
-        if(Input.GetKey(KeyCode.Space))
-        {
-            StopButton();
-        }
 
-    }
-
-    public void Move()
-    {
         //consistient speed in x direction
+        Vector3 movement = new Vector3();
         movement.x = speed;
+        movement.y = 0;
 
         rb2d.velocity = new Vector2(movement.x, movement.y);
+
+
     }
 
-    public void StopButton()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        movement.x = 0;
-
-        rb2d.velocity = new Vector2(movement.x, movement.y);
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 
