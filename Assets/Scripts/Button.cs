@@ -10,14 +10,12 @@ public class Button : MonoBehaviour
     Rigidbody2D rb2d;
 
     public float speed = 5;
-    //public Camera camera1;
 
     private Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
 
 
     void Start()
     {
-        //camera1 = GetComponent<Camera>();
         rb2d = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -28,11 +26,6 @@ public class Button : MonoBehaviour
 
         Move();
         StopButton();
-        //OutOfCamera();
-        if (mySpriteRenderer.isVisible == false)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
 
     }
 
@@ -59,9 +52,6 @@ public class Button : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-
-
-   
 
 
 }
