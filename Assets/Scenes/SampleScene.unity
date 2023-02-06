@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 841585140}
-  offsetX: 6
+  cameraSpeed: 5
 --- !u!1 &841585135
 GameObject:
   m_ObjectHideFlags: 0
