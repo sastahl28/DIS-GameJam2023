@@ -4,29 +4,34 @@ using UnityEngine;
 
 public class Legos : MonoBehaviour
 {
-    public float spawnWidth = 1;
-    public float spawnRate = 1;
+    
 
-    public GameObject[] legos;
+    public GameObject lego;
+    public int legoTimer;
+    private bool hit;
   
 
-    private float lastSpawnTime = 0;
+    
 
     void Start()
     {
-        
+        hit = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lastSpawnTime + 1 / spawnRate < Time.time)
+        legoTimer -= 1;
+        if (hit && legoTimer < 0)
         {
-            lastSpawnTime = Time.time;
-            Vector3 spawnPosition = transform.position;
-            spawnPosition += new Vector3(Random.Range(-spawnWidth, spawnWidth), 0, 0);
-            int legoPick = Random.Range(0, legos.Length);
-            Instantiate(legos[legoPick], spawnPosition, Quaternion.identity);
+            Destroy(lego);
+        }
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Ground"))
+        {
+            hit = true;
         }
     }
 }
