@@ -498,7 +498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585499179355464412, guid: 4bfe52b01a3b4456e8698caed059bcef, type: 3}
       propertyPath: spawnRate
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5585499179355464413, guid: 4bfe52b01a3b4456e8698caed059bcef, type: 3}
       propertyPath: m_RootOrder
@@ -510,7 +510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585499179355464413, guid: 4bfe52b01a3b4456e8698caed059bcef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.75
+      value: 6.9
       objectReference: {fileID: 0}
     - target: {fileID: 5585499179355464413, guid: 4bfe52b01a3b4456e8698caed059bcef, type: 3}
       propertyPath: m_LocalPosition.z
