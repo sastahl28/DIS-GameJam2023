@@ -8,6 +8,7 @@ public class Button : MonoBehaviour
 
     SpriteRenderer mySpriteRenderer;
     Rigidbody2D rb2d;
+    public string nextLevel;
 
     public float speed = 5;
     
@@ -54,6 +55,14 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (collision.gameObject.CompareTag("NextLevel"))
+        {
+            //SceneManager.LoadScene(SceneManager.GetSceneByName(nextLevel));
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
     }
 

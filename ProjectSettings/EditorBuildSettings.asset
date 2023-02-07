@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TemplateScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FootScene.unity
+    guid: dc9db6741f9b3496b9c236ac5d45b8fc
+  - enabled: 1
+    path: Assets/Scenes/WaterFountainScene.unity
+    guid: 7f94fb1838efa4010a88a6f5a06835d6
+  - enabled: 1
+    path: Assets/Scenes/WormScene.unity
+    guid: 4599cd6b2ae4c401789bd4fff46c09bf
+  - enabled: 1
+    path: Assets/Scenes/LegoScene.unity
+    guid: 262407a4d48a54384a1418b6690eea81
   m_configObjects: {}

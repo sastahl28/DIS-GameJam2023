@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Button
+  - NextLevel
   layers:
   - Default
   - TransparentFX

@@ -98,6 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d546ac7aa364a69b3485b865827f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 5674141327292526960, guid: 6968e5ec09e9b4608b99af6132f17fcf, type: 3}
+  cameraSpeed: 2
+  offset: 5
 --- !u!1 &8202877138916366289
 GameObject:
   m_ObjectHideFlags: 0
