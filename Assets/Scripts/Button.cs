@@ -8,19 +8,20 @@ public class Button : MonoBehaviour
 
     SpriteRenderer mySpriteRenderer;
     Rigidbody2D rb2d;
-    public string nextLevel;
 
     public float speed = 5;
     
 
     private Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
-
+    internal object position;
+    private AudioSource death;
 
     void Start()
     {
         
         rb2d = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        death = GetComponent<AudioSource>();
     }
 
     
@@ -54,15 +55,8 @@ public class Button : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            death.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
-        if (collision.gameObject.CompareTag("NextLevel"))
-        {
-            //SceneManager.LoadScene(SceneManager.GetSceneByName(nextLevel));
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
         }
     }
 
