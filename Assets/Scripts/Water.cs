@@ -34,7 +34,7 @@ public class Water : MonoBehaviour
 
 
          
-            Vector2 leftDirection = new Vector2(-2, 0);
+            Vector2 leftDirection = new Vector2(-3, 0);
         
             RaycastHit2D hitLeft = Physics2D.Raycast(orgin, leftDirection, leftDirection.magnitude);
 
