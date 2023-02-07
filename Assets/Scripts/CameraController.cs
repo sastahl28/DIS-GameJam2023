@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     //public Transform button;
 
     private Vector3 movement;
-    public GameObject button;
+    
 
 
     // Start is called before the first frame update
