@@ -36,6 +36,11 @@ public class CameraController : MonoBehaviour
             movement.x += cameraSpeed * Time.deltaTime;
         }
 
+        if(buttonPosition.x < cameraPosition.x - 10)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         transform.position = movement;
 
     }
