@@ -27,6 +27,8 @@ public class WormScript : MonoBehaviour
     SpriteRenderer sr;
     Rigidbody2D rb2d;
 
+    public float offset;
+
     //bool timerActive = true;
 
     //float timer = 0;
@@ -54,27 +56,8 @@ public class WormScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Vector3 movement = new Vector3();
 
-        //Vector3 position = transform.position;
-
-        //if(position.y >= maxHeight)
-        //{
-        //    dir = -1;
-        //}
-
-        //if(position.y <= minHeight)
-        //{
-        //    dir = 1;
-        //    StartCoroutine(pauseAtBottom());
-        //}
-
-        //movement.y +=
-
-
-
-
-        float movementY = startPosition.y + Mathf.PingPong(speed * Time.time, delta);
+        float movementY = startPosition.y + Mathf.PingPong(speed * Time.time + offset, delta);
 
         frameTimer -= Time.deltaTime;
 
