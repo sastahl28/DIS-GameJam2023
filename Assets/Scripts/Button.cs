@@ -48,7 +48,13 @@ public class Button : MonoBehaviour
             movement.x = 0.0f;
             rb2d.velocity = new Vector2(movement.x, movement.y);
         }
-        
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -57,6 +63,11 @@ public class Button : MonoBehaviour
         {
             death.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (collision.gameObject.CompareTag("NextLevel"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
