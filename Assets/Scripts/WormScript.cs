@@ -6,15 +6,6 @@ public class WormScript : MonoBehaviour
 {
     private Vector3 startPosition;
 
-    //private float maxHeight = -3f;
-    //private float minHeight = -7f;
-
-    //private float waitTime = 2 * Time.deltaTime; 
-
-    //private float speed = 1;
-
-    //private int dir = 1;
-
     public float speed = 5;
 
     public float delta = 4;
@@ -26,14 +17,8 @@ public class WormScript : MonoBehaviour
 
     SpriteRenderer sr;
     Rigidbody2D rb2d;
-
+     
     public float offset;
-
-    //bool timerActive = true;
-
-    //float timer = 0;
-
-
 
 
     // Start is called before the first frame update
@@ -45,13 +30,6 @@ public class WormScript : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
 
     }
-
-    IEnumerator pauseAtBottom()
-    {
-        yield return new WaitForSeconds(3f);
-        //my code here after 3 seconds
-    }
-
 
     // Update is called once per frame
     void Update()
@@ -73,8 +51,6 @@ public class WormScript : MonoBehaviour
             }
 
         }
-
-
 
         Vector3 pos = new Vector3(startPosition.x, movementY, startPosition.z);
         transform.position = pos;
