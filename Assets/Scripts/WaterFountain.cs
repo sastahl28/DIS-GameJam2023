@@ -51,7 +51,7 @@ public class WaterFountain : MonoBehaviour
             frameTimer = (1f / animationfps);
             sRenderer.sprite = wfAnimation[frame];
         }
-        if (lifetime <= 0)
+        if (lifetime < 0)
         {
             
             Destroy(gameObject);

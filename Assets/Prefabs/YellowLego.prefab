@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3044002059864425892}
   - component: {fileID: -2599756626773000467}
   - component: {fileID: -5355511797684527374}
+  - component: {fileID: 9116962446527154860}
   m_Layer: 0
   m_Name: YellowLego
   m_TagString: Untagged
@@ -133,3 +134,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9116962446527154860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3044002059864425895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb551fe76a75a452f8aeb68b3a24efb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lego: {fileID: 3044002059864425895}
+  legoTimer: 5

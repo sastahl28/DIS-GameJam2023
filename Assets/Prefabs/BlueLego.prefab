@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2286983209833487098}
   - component: {fileID: -6580511001485268480}
   - component: {fileID: 5446171983048230244}
+  - component: {fileID: 3294723399579453053}
   m_Layer: 0
   m_Name: BlueLego
   m_TagString: Untagged
@@ -133,3 +134,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3294723399579453053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2286983209833487099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb551fe76a75a452f8aeb68b3a24efb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lego: {fileID: 2286983209833487099}
+  legoTimer: 5

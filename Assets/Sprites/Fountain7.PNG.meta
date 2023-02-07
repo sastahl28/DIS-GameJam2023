@@ -120,10 +120,10 @@ TextureImporter:
       name: Fountain7_0
       rect:
         serializedVersion: 2
-        x: 329
-        y: 2
-        width: 344
-        height: 86
+        x: 350
+        y: 0
+        width: 300
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,6 +133,27 @@ TextureImporter:
       bones: []
       spriteID: 1a7c405b248ba439ea55ec816ee282e7
       internalID: -1091076657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fountain7_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 344
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9516cfa099d43eeab0110ba0a69782
+      internalID: -1788417160
       vertices: []
       indices: 
       edges: []
@@ -161,6 +182,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Fountain7_1: -1788417160
       Fountain7_0: -1091076657
   spritePackingTag: 
   pSDRemoveMatte: 0

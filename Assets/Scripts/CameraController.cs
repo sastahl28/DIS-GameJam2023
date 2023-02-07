@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class CameraController : MonoBehaviour
 {
 
-    //public Transform button;
+    public Transform button;
 
     private Vector3 movement;
+
+    public float cameraSpeed = 2;
+    public float offset = 0;
     
 
 
@@ -21,10 +24,19 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x += 2 * Time.deltaTime;
+        Vector3 buttonPosition = button.transform.position;
+        Vector3 cameraPosition = transform.position;
+
+        if(buttonPosition.x + offset >= cameraPosition.x && !Input.GetKey(KeyCode.Space))
+        {
+            movement.x = buttonPosition.x;
+        }
+        else
+        {
+            movement.x += cameraSpeed * Time.deltaTime;
+        }
 
         transform.position = movement;
-        
 
     }
 

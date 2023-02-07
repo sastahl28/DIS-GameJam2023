@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7477462487785494693}
   - component: {fileID: -5654888987884597409}
   - component: {fileID: 5941463263210502115}
+  - component: {fileID: 293323146935081565}
   m_Layer: 0
   m_Name: LegoHead
   m_TagString: Untagged
@@ -133,3 +134,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.790281, y: 1.8588637}
   m_EdgeRadius: 0
+--- !u!114 &293323146935081565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477462487785494694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb551fe76a75a452f8aeb68b3a24efb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lego: {fileID: 7477462487785494694}
+  legoTimer: 5
