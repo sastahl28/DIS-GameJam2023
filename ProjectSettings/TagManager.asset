@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Ground
+  - Button
   layers:
   - Default
   - TransparentFX
