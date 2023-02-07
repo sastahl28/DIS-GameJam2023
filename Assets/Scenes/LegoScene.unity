@@ -123,6 +123,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &407156803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407156804}
+  - component: {fileID: 407156805}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407156804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407156803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.97, y: 4.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1553640058}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407156805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407156803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad732ecbd28dd42b29723580b5fc1e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnWidth: 1
+  spawnRate: 1
+  legos:
+  - {fileID: 2286983209833487099, guid: baed77993d1fa4859b079d556d028670, type: 3}
+  - {fileID: 2387618468334777189, guid: 1a0f6bb408f5449f6910490fb2f22bf2, type: 3}
+  - {fileID: 7477462487785494694, guid: c0ea67a176e57407d86999b60f4f9804, type: 3}
+  - {fileID: 3044002059864425895, guid: fb5e2c88e64d544b1b842e4f2e38b112, type: 3}
 --- !u!1 &714674829
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +242,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1553640058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8202877138858441842, guid: 835db5c568d5f4ff8ae4dd0d086f3978, type: 3}
+  m_PrefabInstance: {fileID: 8202877138947392754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1614687409
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 8202877138858441870, guid: 835db5c568d5f4ff8ae4dd0d086f3978, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202877138916366289, guid: 835db5c568d5f4ff8ae4dd0d086f3978, type: 3}
+      propertyPath: m_Name
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835db5c568d5f4ff8ae4dd0d086f3978, type: 3}
